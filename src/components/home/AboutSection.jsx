@@ -30,7 +30,7 @@ const card2Content = [
 ];
 export default function AboutSection() {
   return (
-    <section className="grid md:grid-cols-3 *:bg-[#383838] gap-4 my-8 mx-auto *:flex *:flex-wrap *:max-w-sm *:items-center *:gap-x-4  *:p-6 text-[#CEC9BC]">
+    <section className="grid md:grid-cols-3 *:bg-[#383838] gap-4 my-8 mx-auto *:flex *:flex-wrap *:max-w-sm *:items-center *:gap-x-4  *:p-6 text-[#CEC9BC] ">
       <div>
         <div className="bg-black p-4">
           <svg
@@ -50,7 +50,7 @@ export default function AboutSection() {
         </div>
         {card1Content &&
           card1Content.map((card1) => (
-            <div key={card1.title}>
+            <div key={card1.title} className="[&>p]:text-sm">
               <p className="mt-4">
                 <strong>{card1.title}</strong>
               </p>
@@ -77,7 +77,7 @@ export default function AboutSection() {
         </div>
         {card2Content &&
           card2Content.map((card2) => (
-            <div key={card2.title}>
+            <div key={card2.title} className="[&>p]:text-sm">
               <p className="mt-4">
                 <strong>{card2.title}</strong>
               </p>

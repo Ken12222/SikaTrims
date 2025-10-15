@@ -71,7 +71,7 @@ export default function Navbar() {
           </svg>
         </div>
         {isOpen && (
-          <div className="w-full absolute z-10 p-4 bg-[#2C2C2C] text-[#CEC9BC] text-base">
+          <div className="md:hidden w-full absolute z-10 p-4 bg-[#2C2C2C] text-[#CEC9BC] text-base">
             <nav>
               <ul className="grid grid-cols gap-6 ">
                 {navlinks &&

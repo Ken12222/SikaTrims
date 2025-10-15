@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 
 export default function WaitList() {
   return (
-    <section className="w-4/6 mx-auto my-16 *:text-center">
+    <section className="md:w-4/6 mx-auto my-16 *:text-center">
       <p className="text-4xl">Early Access to SikaTrims Awaits</p>
       <p className="text-base mb-4">
         Designed for barbers and shop owners who want to stay digital, stay

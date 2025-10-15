@@ -2,6 +2,8 @@ import HeroSection from "@/components/home/HeroSection";
 import HeroImage from "../../public/heroImage.png";
 import AboutSection from "@/components/home/AboutSection";
 import WaitList from "@/components/home/waitlist";
+import FromSikaTrims from "@/components/home/FromSikaTrims";
+import StepsCards from "@/components/home/StepCard";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       </div>
       <AboutSection />
       <WaitList />
+      <FromSikaTrims />
+      <StepsCards />
     </div>
   );
 }

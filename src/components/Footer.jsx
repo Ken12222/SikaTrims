@@ -5,6 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import facebook from "../../public/Icon/Facebook.png";
+import Instagram from "../../public/Icon/Instagram.png";
+import LinkedIn from "../../public/Icon/LinkedIn.png";
+import X from "../../public/Icon/X.png";
+import Youtube from "../../public/Icon/Youtube.png";
 
 const navlinks = [
   {
@@ -46,7 +51,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="py-16 w-full bg-black">
+    <footer className="py-16 w-full bg-black left-0 bottom-0 right-0">
       <div className="w-5/6 mx-auto">
         <div className="grid md:grid-cols-3 my-4 text-white">
           <div className="grid md:grid-cols-2">
@@ -73,40 +78,50 @@ export default function Footer() {
           </div>
           <div>
             <p>
-              <strong>Subscribe</strong>
+              <strong>Early Access</strong>
             </p>
             <p className="mb-4 text-[#CEC9BC]">
-              Join our newsletter to stay updated on new features and special
-              promotions.
+              Designed for barbers and shop owners who want to stay digital,
+              stay booked, and stay ahead
             </p>
-            <div className="flex gap-2">
+            <form action="" className="flex gap-2">
               <Input
                 type={"text"}
                 placeholder="Enter your Email"
                 className={"outline-[#CEC9BC]"}
               />
               <Button className={"bg-[#2C2C2C] text-[#CEC9BC]"} type="submit">
-                Subscribe
+                Join Waitlist
               </Button>
-            </div>
+            </form>
           </div>
         </div>
         <div>
-          <hr />
-          <div className="flex items-center justify-between text-[#CEC9BC]">
+          <hr className="text-gray-200" />
+          <div className="md:flex items-center justify-between text-[#CEC9BC]">
+            <div className="flex gap-4 my-4">
+              <Link href={"/"}>
+                <Image src={facebook} alt="facebook" />
+              </Link>
+              <Link href={"/"}>
+                <Image src={X} alt="X" />
+              </Link>
+              <Link href={"/"}>
+                <Image src={Instagram} alt="Instagram" />
+              </Link>
+              <Link href={"/"}>
+                <Image src={LinkedIn} alt="LinkedIn" />
+              </Link>
+              <Link href={"/"}>
+                <Image src={Youtube} alt="Youtube" />
+              </Link>
+            </div>
             <div className="my-4 md:flex text-white gap-4">
-              <p>© 2024 Copyright. All rights reserved.</p>
+              <p>© 2025 Copyright. All rights reserved.</p>
               <Link href={"privacy_policy"} className="mx-4">
                 Privacy Policy
               </Link>
               <Link href={"privacy_policy"}>Terms of Service</Link>
-            </div>
-            <div className="md:flex gap-4">
-              <Link href={"/"}>Facebook</Link>
-              <Link href={"/"}>x</Link>
-              <Link href={"/"}>Instagram</Link>
-              <Link href={"/"}>Linkedin</Link>
-              <Link href={"/"}>Youtube</Link>
             </div>
           </div>
         </div>
