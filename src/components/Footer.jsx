@@ -67,7 +67,10 @@ export default function Footer() {
                   {navlinks &&
                     navlinks.map((link) => (
                       <li key={link.href}>
-                        <Link className="text-[#CEC9BC]" href={link.href}>
+                        <Link
+                          className="text-[#CEC9BC] hover:text-[#2C2C2C] transition-300 ease-in-out"
+                          href={link.href}
+                        >
                           {link.label}
                         </Link>
                       </li>

@@ -90,7 +90,7 @@ export default function AboutSection() {
           background:
             "linear-gradient(90deg, rgba(161, 157, 147, 0.5), rgba(206, 201, 188, 0.7))",
         }}
-        className="gap-4"
+        className="w-fit gap-4"
       >
         <div className="bg-black p-4">
           <svg
