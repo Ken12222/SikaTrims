@@ -41,7 +41,6 @@ export default function Navbar() {
     }
   }
 
-  console.log(openModal);
   return (
     <header className="fixed inset-x-0">
       <div className="hidden w-5/6 mx-auto mt-8  md:flex justify-between items-center backdrop-blur-sm bg-white/30  rounded-lg p-6">
