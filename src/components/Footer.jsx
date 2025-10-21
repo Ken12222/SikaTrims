@@ -56,7 +56,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 my-4 text-white">
           <div className="grid md:grid-cols-2">
             <div className="mb-8">
-              <Image src={logo} width={100} height={100} alt="logo" />
+              <Link href={"/"}>
+                <Image src={logo} width={100} height={100} alt="logo" />
+              </Link>
             </div>
             <div>
               <p className="mb-4">
