@@ -6,12 +6,14 @@ import { Button } from "../ui/button";
 
 export default function FromSikaTrims() {
   return (
-    <section className="w-full mx-auto *:text-center my-16">
+    <section className="w-full mx-auto *:text-center [&>p]:text-[#CEC9BC] my-16">
       <p className="text-2xl">Get The Most Out of SikaTrims</p>
       <p>Get The Most Out of SikaTrims</p>
 
       <Tabs defaultValue="client">
-        <TabsList className={"md:w-2/5 mx-auto my-4"}>
+        <TabsList
+          className={"md:w-2/5 mx-auto my-4 bg-[#383838] *:text-[#CEC9BC]"}
+        >
           <TabsTrigger value="client">For Clients</TabsTrigger>
           <TabsTrigger value="barber">For Barbers</TabsTrigger>
           <TabsTrigger value="barbershop">For Barbershops</TabsTrigger>
@@ -101,7 +103,7 @@ export default function FromSikaTrims() {
           className={"grid md:grid-cols-2 gap-8 items-center "}
           style={{
             background:
-              "linear-gradient(35deg, rgba(161, 157, 147, 0.15), rgba(161, 157, 147, 0.2), rgba(206, 201, 188, 0.5))",
+              "linear-gradient(35deg, rgb(161, 157, 147), rgb(161, 157, 147), rgb(206, 201, 188))",
           }}
         >
           <div className="">
@@ -181,7 +183,7 @@ export default function FromSikaTrims() {
           className={"grid md:grid-cols-2 gap-8 items-center "}
           style={{
             background:
-              "linear-gradient(35deg, rgba(161, 157, 147, 0.15), rgba(161, 157, 147, 0.2), rgba(206, 201, 188, 0.5))",
+              "linear-gradient(35deg, rgb(161, 157, 147), rgb(161, 157, 147), rgb(206, 201, 188))",
           }}
         >
           <div className="">
