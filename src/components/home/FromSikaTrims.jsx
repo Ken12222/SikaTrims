@@ -21,7 +21,7 @@ export default function FromSikaTrims() {
           className={"grid md:grid-cols-2 gap-8 items-center "}
           style={{
             background:
-              "linear-gradient(35deg, rgba(161, 157, 147, 0.15), rgba(161, 157, 147, 0.2), rgba(206, 201, 188, 0.5))",
+              "linear-gradient(35deg, rgb(161, 157, 147), rgb(161, 157, 147), rgb(206, 201, 188))",
           }}
         >
           <div className="">
