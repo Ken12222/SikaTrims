@@ -45,7 +45,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0">
       <div className="hidden w-5/6 mx-auto mt-8  md:flex justify-between items-center backdrop-blur-sm bg-white/30  rounded-lg p-6">
         <Link href={"/"}>
-          <Image alt="sikatrims_logo" src={logo} width={100} height={100} />
+          <Image alt="sikatrim_logo" src={logo} width={100} height={100} />
         </Link>
 
         <nav className="">
@@ -71,7 +71,7 @@ export default function Navbar() {
       <div>
         <div className="md:hidden w-full mx-auto flex justify-between items-center backdrop-blur-sm bg-white/30 p-6">
           <Link href={"/"}>
-            <Image alt="sikatrims_logo" src={logo} width={100} height={100} />
+            <Image alt="Sikatrim_logo" src={logo} width={100} height={100} />
           </Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"

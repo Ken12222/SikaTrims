@@ -6,7 +6,7 @@ import { Input } from "../ui/input";
 export default function WaitList() {
   return (
     <section className="md:w-4/6 mx-auto my-16 *:text-center *:text-[#CEC9BC]">
-      <p className="text-4xl">Early Access to SikaTrims Awaits</p>
+      <p className="text-4xl">Early Access to Sikatrim Awaits</p>
       <p className="text-base mb-4">
         Designed for barbers and shop owners who want to stay digital, stay
         booked, and stay ahead.

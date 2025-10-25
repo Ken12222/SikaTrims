@@ -4,11 +4,11 @@ import image from "../../../public/Vector.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
-export default function FromSikaTrims() {
+export default function FromSikatrim() {
   return (
     <section className="w-full mx-auto *:text-center [&>p]:text-[#CEC9BC] my-16">
-      <p className="text-2xl">Get The Most Out of SikaTrims</p>
-      <p>Get The Most Out of SikaTrims</p>
+      <p className="text-2xl">Get The Most Out of Sikatrim</p>
+      <p>Get The Most Out of Sikatrim</p>
 
       <Tabs defaultValue="client">
         <TabsList
