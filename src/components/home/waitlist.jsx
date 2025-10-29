@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 
 export default function WaitList() {
   return (
-    <section className="md:w-4/6 mx-auto my-16 *:text-center *:text-[#CEC9BC]">
+    <section className="md:w-full mx-auto my-16 *:text-center *:text-[#CEC9BC]">
       <p className="text-4xl">Early Access to Sikatrim Awaits</p>
       <p className="text-base mb-4">
         Designed for barbers and shop owners who want to stay digital, stay
@@ -14,13 +14,13 @@ export default function WaitList() {
 
       <form
         action=""
-        className="flex gap-4 border border-[#CEC9BC] p-4 rounded-lg"
+        className="flex gap-4 border md:w-4/5 mx-auto border-[#CEC9BC] p-4 rounded-lg"
       >
         <Input
           type={"text"}
           required
           className={
-            "outline-none border-none focus-visible:border-none shadow-none"
+            " outline-none border-none focus-visible:border-none shadow-none"
           }
           placeholder="Your EMail"
         />

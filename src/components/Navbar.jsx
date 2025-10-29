@@ -22,7 +22,7 @@ export default function Navbar() {
     },
     {
       label: "Help & Resource",
-      href: "/help_resource",
+      href: "/help-resource",
     },
     {
       label: "Contact",
@@ -32,6 +32,7 @@ export default function Navbar() {
 
   const [openModal, setOpenModal] = useState(false);
 
+  //handle pricing_page modal
   async function handleClick(e, linkName) {
     if (linkName === "Pricing") {
       e.preventDefault();
@@ -39,6 +40,11 @@ export default function Navbar() {
     } else {
       setOpenModal(false);
     }
+  }
+
+  function handleCloseModal(e) {
+    e.preventDefault();
+    setOpenModal(false);
   }
 
   return (
@@ -73,21 +79,38 @@ export default function Navbar() {
           <Link href={"/"}>
             <Image alt="Sikatrim_logo" src={logo} width={100} height={100} />
           </Link>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-8 text-[#CEC9BC]"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-            />
-          </svg>
+          {isOpen && isOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-8 text-[#CEC9BC]"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          )}
         </div>
         {isOpen && (
           <div className="md:hidden w-full absolute z-10 p-4 bg-[#2C2C2C] text-[#CEC9BC] text-base">
@@ -111,6 +134,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
+      {/* Modal for Pricing page */}
       {openModal && (
         <div className="[&>div]:m-4 absolute inset-0 z-100 w-full h-screen backdrop-blur-sm bg-black/50 text-white flex justify-center items-center">
           <div
@@ -120,8 +144,24 @@ export default function Navbar() {
             }}
             className="grid md:grid-cols-2 gap-4 items-center "
           >
-            <div className="[&_p:first-child]:text-4xl [&_p:last-child]:text-2xl text-[#2C2C2C] *:my-8 *:mx-8">
-              <p className="font-bold">Sign up For Free Today</p>
+            <div className=" [&_p:last-child]:text-2xl text-[#2C2C2C] *:my-8 *:mx-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+                onClick={(e) => handleCloseModal(e)}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+
+              <p className="font-bold text-4xl">Sign up For Free Today</p>
               <p className="my-4">
                 Grow your barbershop or studio with tools that keep you sharp
               </p>

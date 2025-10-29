@@ -5,11 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import facebook from "../../public/Icon/Facebook.png";
-import Instagram from "../../public/Icon/Instagram.png";
-import LinkedIn from "../../public/Icon/LinkedIn.png";
-import X from "../../public/Icon/X.png";
-import Youtube from "../../public/Icon/Youtube.png";
+import Socials from "./footer/page";
 
 const navlinks = [
   {
@@ -22,30 +18,11 @@ const navlinks = [
   },
   {
     label: "Help & Resource",
-    href: "/help_resource",
+    href: "/help-resource",
   },
   {
     label: "Contact",
     href: "/contact",
-  },
-];
-
-const socials = [
-  {
-    icon: "Home",
-    href: "/",
-  },
-  {
-    icon: "Home",
-    href: "/",
-  },
-  {
-    icon: "Home",
-    href: "/",
-  },
-  {
-    icon: "Home",
-    href: "/",
   },
 ];
 
@@ -104,29 +81,13 @@ export default function Footer() {
         <div>
           <hr className="text-gray-200" />
           <div className="md:flex items-center justify-between text-[#CEC9BC]">
-            <div className="flex gap-4 my-4">
-              <Link href={"/"}>
-                <Image src={facebook} alt="facebook" />
-              </Link>
-              <Link href={"/"}>
-                <Image src={X} alt="X" />
-              </Link>
-              <Link href={"/"}>
-                <Image src={Instagram} alt="Instagram" />
-              </Link>
-              <Link href={"/"}>
-                <Image src={LinkedIn} alt="LinkedIn" />
-              </Link>
-              <Link href={"/"}>
-                <Image src={Youtube} alt="Youtube" />
-              </Link>
-            </div>
+            <Socials className="flex gap-4 my-4" />
             <div className="my-4 md:flex text-white gap-4">
               <p>© 2025 Copyright. All rights reserved.</p>
-              <Link href={"privacy_policy"} className="mx-4">
+              <Link href={"privacy-policy"} className="mx-4">
                 Privacy Policy
               </Link>
-              <Link href={"privacy_policy"}>Terms of Service</Link>
+              <Link href={"terms-of-use"}>Terms of Service</Link>
             </div>
           </div>
         </div>

@@ -4,10 +4,12 @@ import AboutSection from "@/components/home/AboutSection";
 import WaitList from "@/components/home/waitlist";
 import FromSikaTrims from "@/components/home/FromSikaTrims";
 import StepsCards from "@/components/home/StepCard";
+import Modal from "@/components/modal";
 
 export default function Home() {
   return (
     <div className="font-sans">
+      <Modal />
       <div className=" grid items-center justify-items-center min-h-screen gap-16">
         <HeroSection
           heroText={"Stay Fresh. Stay Booked."}

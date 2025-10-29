@@ -115,7 +115,7 @@ export default function AboutSection() {
           </div>
           <p className="text-[#2C2C2C]">
             Streamline your bookings, fill your chairs, and watch your business
-            thrive. From solo barbers to full studios —manage appointments
+            thrive. From solo barbers to full studios, manage appointments
             effortlessly and focus on what you do best: creating great styles.
           </p>
         </div>
