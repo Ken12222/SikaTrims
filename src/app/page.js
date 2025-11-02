@@ -1,3 +1,4 @@
+"use client";
 import HeroSection from "@/components/home/HeroSection";
 import HeroImage from "../../public/heroImage.jpeg";
 import AboutSection from "@/components/home/AboutSection";

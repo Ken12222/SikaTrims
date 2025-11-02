@@ -1,6 +1,6 @@
 "use client";
 
-const card1Content = [
+const cardContent = [
   {
     title: "Built for Barbers, Not Just Clients",
     text: "Everything you need to run and grow your chair or shop.",
@@ -13,8 +13,6 @@ const card1Content = [
     title: "Grow Your Brand",
     text: "Showcase your cuts, build loyalty, and attract new clients online.",
   },
-];
-const card2Content = [
   {
     title: "Add Your Own Services",
     text: "Customize the services you offer, from fades to beard trims, with your own pricing.",
@@ -30,9 +28,9 @@ const card2Content = [
 ];
 export default function AboutSection() {
   return (
-    <section className="grid md:grid-cols-3 *:bg-[#383838] gap-4 my-8 mx-auto *:flex *:flex-wrap *:max-w-sm *:items-center *:gap-x-4  *:p-6 text-[#CEC9BC] ">
-      <div>
-        <div className="bg-black p-4">
+    <section className="grid md:grid-cols-3 *:bg-[#383838] gap-4 my-8 mx-auto  *:items-center *:gap-x-4  *:p-6 text-[#CEC9BC] ">
+      <div className="[&_div]:w-fit">
+        <div className=" bg-black p-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -48,8 +46,8 @@ export default function AboutSection() {
             />
           </svg>
         </div>
-        {card1Content &&
-          card1Content.map((card1) => (
+        {cardContent &&
+          cardContent.slice(0, 3).map((card1) => (
             <div key={card1.title} className="[&>p]:text-sm">
               <p className="mt-4">
                 <strong>{card1.title}</strong>
@@ -58,7 +56,7 @@ export default function AboutSection() {
             </div>
           ))}
       </div>
-      <div>
+      <div className="[&_div]:w-fit">
         <div className="bg-black p-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +73,8 @@ export default function AboutSection() {
             />
           </svg>
         </div>
-        {card2Content &&
-          card2Content.map((card2) => (
+        {cardContent &&
+          cardContent.slice(3, 6).map((card2) => (
             <div key={card2.title} className="[&>p]:text-sm">
               <p className="mt-4">
                 <strong>{card2.title}</strong>
@@ -90,7 +88,7 @@ export default function AboutSection() {
           background:
             "linear-gradient(90deg, rgba(161, 157, 147, 0.5), rgba(206, 201, 188, 0.7))",
         }}
-        className="w-fit gap-4"
+        className="[&_div]:w-fit gap-4"
       >
         <div className="bg-black p-4">
           <svg
