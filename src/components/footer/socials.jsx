@@ -13,19 +13,23 @@ export default function Socials({ className }) {
       <Link href={"/"}>
         <FaFacebook size={23} />
       </Link>
-      <Link href={"/"}>
+      <Link href={"https://youtube.com/@sikatrim?si=fmwYRWUXluipg89a"}>
         <FaYoutube size={25} />
       </Link>
-      <Link href={"/"}>
+      <Link
+        href={
+          "https://www.instagram.com/sikatrim?igsh=MzZwNXpramViOHF5&utm_source=qr"
+        }
+      >
         <RiInstagramFill size={25} />
       </Link>
-      <Link href={"/"}>
+      <Link href={"https://x.com/sikatrim?s=11"}>
         <FaSquareXTwitter size={22} />
       </Link>
       <Link href={"/"}>
         <FaLinkedin size={22} />
       </Link>
-      <Link href={"/"}>
+      <Link href={"https://www.tiktok.com/@sikatrim?_t=ZT-90ssu8ANJ8J&_r=1"}>
         <AiFillTikTok size={25} />
       </Link>
     </div>
