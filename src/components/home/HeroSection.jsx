@@ -1,16 +1,11 @@
 "use client";
 import Image from "next/image";
-import gstore from "../../../public/gstore.png";
-import ggstore from "../../../public/ggstore.png";
-import astore from "../../../public/astore.png";
-import Link from "next/link";
+import Stores from "../stores";
 
 export default function HeroSection({
   heroText, //this is main hero text
   subText, //this is the sub text
   HeroImage, //this is the bg image
-  ctagoogleStore, //link to google store
-  ctaappStore, //link to appstore
 }) {
   return (
     <section className="w-full pt-8 flex items-center">
@@ -19,7 +14,6 @@ export default function HeroSection({
           src={HeroImage}
           fill
           priority
-          sizes="80vw"
           className="object-cover"
           alt="hero_image"
         />
@@ -36,28 +30,7 @@ export default function HeroSection({
           <h1 className="text-6xl mb-4">{heroText}</h1>
           <p className="text-xl">{subText}</p>
         </div>
-        <div className="flex gap-4">
-          {ctagoogleStore && (
-            <Link href={ctagoogleStore}>
-              <Image
-                src={ggstore}
-                width={150}
-                height={150}
-                alt="google_store_icon"
-              />
-            </Link>
-          )}
-          {ctaappStore && (
-            <Link href={ctaappStore}>
-              <Image
-                src={astore}
-                width={150}
-                height={150}
-                alt="app_store_icon"
-              />
-            </Link>
-          )}
-        </div>
+        <Stores />
       </div>
     </section>
   );

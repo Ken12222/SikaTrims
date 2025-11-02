@@ -7,9 +7,12 @@ import { Button } from "./ui/button";
 import ggstore from "../../public/ggstore.png";
 import astore from "../../public/astore.png";
 import free_price from "../../public/free_price.png";
+import Stores from "./stores";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  console.log(isOpen);
 
   const navlinks = [
     {
@@ -86,13 +89,13 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8 text-[#CEC9BC]"
+              className="size-6 text-[#CEC9BC]"
               onClick={() => setIsOpen(!isOpen)}
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                d="M6 18 18 6M6 6l12 12"
               />
             </svg>
           ) : (
@@ -102,12 +105,13 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6"
+              className="size-8 text-[#CEC9BC]"
+              onClick={() => setIsOpen(!isOpen)}
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M6 18 18 6M6 6l12 12"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
               />
             </svg>
           )}
@@ -144,7 +148,7 @@ export default function Navbar() {
             }}
             className="grid md:grid-cols-2 gap-4 items-center "
           >
-            <div className=" [&_p:last-child]:text-2xl text-[#2C2C2C] *:my-8 *:mx-8">
+            <div className=" [&_p:last-child]:text-2xl text-[#2C2C2C] *:my-4 *:mx-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -162,25 +166,12 @@ export default function Navbar() {
               </svg>
 
               <p className="font-bold text-4xl">Sign up For Free Today</p>
-              <p className="my-4">
+              <p className="">
                 Grow your barbershop or studio with tools that keep you sharp
               </p>
 
               <div className="relative flex gap-2">
-                <Image
-                  alt="playstore_image"
-                  src={ggstore}
-                  width={130}
-                  priority
-                  className="object-cover overflow-hidden"
-                />
-                <Image
-                  alt="playstore_image"
-                  src={astore}
-                  width={130}
-                  priority
-                  className="object-cover overflow-hidden"
-                />
+                <Stores />
               </div>
             </div>
             <div className="relative w-full h-100 inset-0">

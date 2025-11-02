@@ -1,5 +1,5 @@
 import HeroSection from "@/components/home/HeroSection";
-import HeroImage from "../../public/heroImage.png";
+import HeroImage from "../../public/heroImage.jpeg";
 import AboutSection from "@/components/home/AboutSection";
 import WaitList from "@/components/home/waitlist";
 import FromSikaTrims from "@/components/home/FromSikaTrims";
@@ -22,7 +22,14 @@ export default function Home() {
         />
       </div>
       <AboutSection />
-      <WaitList />
+      <WaitList
+        className={"md:w-full mx-auto my-16 *:text-center *:text-[#CEC9BC]"}
+        mainTextClassName={"text-4xl"}
+        subtextClassName={"text-base mb-4"}
+        FormclassName={
+          "flex flex-wrap md:flex-nowrap gap-4 border md:w-4/5 mx-auto border-[#CEC9BC] p-4 rounded-lg"
+        }
+      />
       <FromSikaTrims />
       <StepsCards />
     </div>

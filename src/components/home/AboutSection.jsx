@@ -110,8 +110,9 @@ export default function AboutSection() {
         </div>
         <div className="text-black mb-8">
           <div className="flex gap-2 items-end mb-4">
-            <p className="text-6xl">321+</p>
-            <p className="text-[#2C2C2C]">Appointments</p>
+            <p className="text-[#2C2C2C] text-2xl">
+              Manage Appointments. Maximize Growth.
+            </p>
           </div>
           <p className="text-[#2C2C2C]">
             Streamline your bookings, fill your chairs, and watch your business

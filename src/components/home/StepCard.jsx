@@ -2,6 +2,7 @@
 import ggstore from "../../../public/ggstore.png";
 import astore from "../../../public/astore.png";
 import Image from "next/image";
+import Stores from "../stores";
 
 const steps = [
   {
@@ -65,8 +66,7 @@ export default function StepsCards() {
           ))}
       </div>
       <div className="grid md:flex justify-center gap-4">
-        <Image src={ggstore} width={180} height={60} alt="google_playstore" />
-        <Image src={astore} width={180} height={60} alt="appstore" />
+        <Stores />
       </div>
     </div>
   );

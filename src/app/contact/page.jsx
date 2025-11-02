@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@radix-ui/react-label";
 import Image from "next/image";
 import contact from "../../../public/Vector.png";
-import Socials from "@/components/footer/page";
+import Socials from "@/components/footer/socials";
 
 export default function ContactUs() {
   return (

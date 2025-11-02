@@ -2,10 +2,8 @@
 import Image from "next/image";
 import logo from "../../public/logo.png";
 import Link from "next/link";
-import { useState } from "react";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
-import Socials from "./footer/page";
+import Socials from "./footer/socials";
+import WaitList from "./home/waitlist";
 
 const navlinks = [
   {
@@ -30,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="py-16 w-full bg-black left-0 bottom-0 right-0">
       <div className="w-5/6 mx-auto">
-        <div className="grid md:grid-cols-3 my-4 text-white">
+        <div className="grid md:grid-cols-2 my-4 text-white">
           <div className="grid md:grid-cols-2">
             <div className="mb-8">
               <Link href={"/"}>
@@ -58,25 +56,14 @@ export default function Footer() {
               </nav>
             </div>
           </div>
-          <div>
-            <p>
-              <strong>Early Access</strong>
-            </p>
-            <p className="mb-4 text-[#CEC9BC]">
-              Designed for barbers and shop owners who want to stay digital,
-              stay booked, and stay ahead
-            </p>
-            <form action="" className="flex gap-2">
-              <Input
-                type={"text"}
-                placeholder="Enter your Email"
-                className={"outline-[#CEC9BC]"}
-              />
-              <Button className={"bg-[#2C2C2C] text-[#CEC9BC]"} type="submit">
-                Join Waitlist
-              </Button>
-            </form>
-          </div>
+          <WaitList
+            className={"md:w-full mx-auto *:text-left *:text-[#CEC9BC]"}
+            mainTextClassName={"text-xl"}
+            subtextClassName={"text-sm mb-4"}
+            FormclassName={
+              "flex flex-wrap justify-start md:flex-nowrap gap-4 border mx-auto border-[#CEC9BC] p-2 rounded-lg"
+            }
+          />
         </div>
         <div>
           <hr className="text-gray-200" />

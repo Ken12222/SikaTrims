@@ -1,6 +1,8 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import image from "../../../public/Vector.png";
+import book from "../../../public/Vector.png";
+import chair from "../../../public/chair.png";
+import shop from "../../../public/shop.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
@@ -27,7 +29,7 @@ export default function FromSikatrim() {
           }}
         >
           <div className="">
-            <Image src={image} alt={"from_image"} />
+            <Image src={book} alt={"from_image"} />
           </div>
           <div className="mx-4 p-4 *:text-left *:flex *:gap-4 [&_p:last-child]:my-6  *:items-center [&>p:first-child]:text-3xl [&_p:last-child]:text-[#2C2C2C] [&_p]:text-lg">
             <p className="text-4xl font-bold ">Book With Ease</p>
@@ -96,9 +98,6 @@ export default function FromSikatrim() {
               </div>
               <p>Change of plans? Tap, reschedule, done.</p>
             </div>
-            <Button className={"w-full md:w-fit mb-4"}>
-              Download to Explore
-            </Button>
           </div>
         </TabsContent>
         <TabsContent
@@ -110,7 +109,7 @@ export default function FromSikatrim() {
           }}
         >
           <div className="">
-            <Image src={image} alt={"from_image"} />
+            <Image src={chair} alt={"from_image"} />
           </div>
           <div className="mx-4 p-4 *:text-left *:flex *:gap-4 [&_p:last-child]:my-6  *:items-center [&>p:first-child]:text-3xl [&_p:last-child]:text-[#2C2C2C] [&_p]:text-lg">
             <p className="text-4xl font-bold ">Manage your own chair</p>
@@ -176,9 +175,6 @@ export default function FromSikatrim() {
               </div>
               <p>Protect your time with custom no-show policies</p>
             </div>
-            <Button className={"w-full md:w-fit mb-4"}>
-              Download to Explore
-            </Button>
           </div>
         </TabsContent>
         <TabsContent
@@ -190,7 +186,7 @@ export default function FromSikatrim() {
           }}
         >
           <div className="">
-            <Image src={image} alt={"from_image"} />
+            <Image src={shop} alt={"from_image"} />
           </div>
           <div className="mx-4 p-4 *:text-left *:flex *:gap-4 [&_p:last-child]:my-6  *:items-center [&>p:first-child]:text-3xl [&_p:last-child]:text-[#2C2C2C] [&_p]:text-lg">
             <p className="text-4xl font-bold ">Mange Your Shop</p>
@@ -256,9 +252,6 @@ export default function FromSikatrim() {
               </div>
               <p>All your insights. One app. No extra tools req</p>
             </div>
-            <Button className={"w-full md:w-fit mb-4"}>
-              Download to Explore
-            </Button>
           </div>
         </TabsContent>
       </Tabs>

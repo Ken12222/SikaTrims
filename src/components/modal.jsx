@@ -40,7 +40,16 @@ export default function Modal() {
                 d="M6 18 18 6M6 6l12 12"
               />
             </svg>
-            <WaitList />
+            <WaitList
+              className={
+                "md:w-full mx-auto my-16 *:text-center *:text-[#CEC9BC]"
+              }
+              mainTextClassName={"text-4xl"}
+              subtextClassName={"text-base mb-4 p-4"}
+              FormclassName={
+                "flex flex-wrap md:flex-nowrap gap-4 border md:w-4/5 mx-auto border-[#CEC9BC] p-4 rounded-lg"
+              }
+            />
           </div>
         </div>
       )}
