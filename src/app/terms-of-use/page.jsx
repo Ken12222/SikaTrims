@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const terms = [
   {
     id: 1,
@@ -198,26 +200,39 @@ const terms = [
 
 export default function TermsOfUse() {
   return (
-    <section className="py-32 md:w-3/5 mx-auto flex flex-wrap items-center *:text-[#CEC9BC]">
+    <section className="py-32 mx-auto flex flex-wrap items-center *:text-[#CEC9BC]">
       <h1 className="text-3xl mt-8 font-bold">Terms Of Service</h1>
-      <div className="w-full">
-        {terms &&
-          terms.map((t) => (
-            <div
-              key={t.id}
-              className="[&>p:first-child]:font-bold [&>p:first-child]:text-xl [&>p:first-child]:mt-8 [&>p:first-child]:mb-2"
-            >
-              <p>{t.title}</p>
-              <ol>
-                {t.content &&
-                  t.content.map((c) => (
-                    <li key={c.term}>
-                      <p className="text-lg">{c.term}</p>
-                    </li>
-                  ))}
-              </ol>
-            </div>
-          ))}
+      <div className="grid md:grid-cols-3 gap-4">
+        <div className="bg-[#383838] w-fit h-fit p-8 mt-8">
+          {terms &&
+            terms.map((t) => (
+              <div key={t.id} className="my-2">
+                <Link className="hover:text-gray-600" href={"#" + `${t.title}`}>
+                  {t.title}
+                </Link>
+              </div>
+            ))}
+        </div>
+        <div className="md:col-span-2">
+          {terms &&
+            terms.map((t) => (
+              <div
+                id={`${t.title}`}
+                key={t.id}
+                className="[&>p:first-child]:font-bold [&>p:first-child]:text-xl [&>p:first-child]:mt-8 [&>p:first-child]:mb-2"
+              >
+                <p>{t.title}</p>
+                <ol>
+                  {t.content &&
+                    t.content.map((c) => (
+                      <li key={c.term}>
+                        <p className="text-lg">{c.term}</p>
+                      </li>
+                    ))}
+                </ol>
+              </div>
+            ))}
+        </div>
       </div>
     </section>
   );

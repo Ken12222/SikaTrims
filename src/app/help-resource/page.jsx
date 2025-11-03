@@ -8,12 +8,6 @@ import { useState } from "react";
 export default function HelpResource() {
   const [openAccordion, setOpenAccordion] = useState(null);
 
-  // function handleAccordion(e) {
-  //   e.preventDefault();
-  //   setOpenAccordion(!openAccordion);
-  // }
-  console.log(openAccordion);
-
   const helpContents = [
     {
       heading: "HOW DO I FIND A BARBER ?",

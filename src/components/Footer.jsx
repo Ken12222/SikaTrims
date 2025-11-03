@@ -75,6 +75,7 @@ export default function Footer() {
                 Privacy Policy
               </Link>
               <Link href={"terms-of-use"}>Terms of Service</Link>
+              <Link href={"eula"}>EULA</Link>
             </div>
           </div>
         </div>
