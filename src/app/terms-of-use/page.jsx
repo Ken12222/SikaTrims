@@ -268,9 +268,9 @@ export default function TermsOfUse() {
                         className="[&_p]:text-base [&_>div:last-child]:mx-4"
                       >
                         {/* <p className="text-xl my-4 list-disc">{c.term}</p> */}
-                        <li className="list">
+                        {/* <li className="list">
                           <p className="text-xl my-4 font-semibold">{c.term}</p>
-                        </li>
+                        </li> */}
                         <div>
                           {c.subterm.one && (
                             <li className="list-disc">
