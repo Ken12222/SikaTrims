@@ -10,12 +10,8 @@ const terms = [
       "Welcome to Sikatrim! These Terms & Conditions (“Terms”) govern your access to and use of the Sikatrim mobile application and related services (the “Platform”).By creating an account or using our Platform, you agree to these Terms. If you disagree, do not use Sikatrim.",
     content: [
       {
-        term: "",
-        subterm: {
-          one: "",
-          two: "",
-          three: "",
-        },
+        term: "1",
+        subterm: {},
       },
     ],
   },
@@ -26,7 +22,7 @@ const terms = [
       "Welcome to Sikatrim! These Terms & Conditions (“Terms”) govern your access to and use of the Sikatrim mobile application and related services (the “Platform”).By creating an account or using our Platform, you agree to these Terms. If you disagree, do not use Sikatrim.",
     content: [
       {
-        term: "",
+        term: "2",
         subterm: {
           one: "“Client” – A person booking barbering services through the Platform.",
           two: "“Barber” – An individual registered to provide barbering services through the Platform.",
@@ -44,7 +40,7 @@ const terms = [
       "You must be at least 16 years old to create an account and use Sikatrim.",
     content: [
       {
-        term: "",
+        term: "3",
         subterm: {
           one: "You are legally capable of entering into a binding agreement.",
           two: "All information you provide is accurate and up to date.",
@@ -58,7 +54,7 @@ const terms = [
     subtext: "",
     content: [
       {
-        term: "",
+        term: "4",
         subterm: {
           one: "Users must register with a valid phone number, email, or social login.",
           two: "You are responsible for all activities under your account.",
@@ -74,7 +70,7 @@ const terms = [
     subtext: "",
     content: [
       {
-        term: "",
+        term: "5",
         subterm: {
           one: "Clients can book barbers or barbershops for services at specified times.",
           two: "Payments may be made via Mobile Money, debit/credit cards, or in cash (if the barber/shop accepts).",
@@ -91,7 +87,7 @@ const terms = [
     subtext: "",
     content: [
       {
-        term: "",
+        term: "6",
         subterm: {
           one: "Cancellation policies vary by Barber/Barbershop and are displayed before booking.",
           two: "Refund eligibility depends on the service provider’s policy and our payment processing timelines.",
@@ -107,7 +103,7 @@ const terms = [
     subtext: "",
     content: [
       {
-        term: "",
+        term: "7",
         subterm: {
           one: "We offer different subscription tiers with varying features.",
           two: "Subscription fees are non-refundable except as required by law.",
@@ -123,7 +119,7 @@ const terms = [
       "Barbers and Barbershops can upload photos and videos of their work to their profiles or the “Trimspiration” gallery.",
     content: [
       {
-        term: "",
+        term: "8",
         subterm: {
           one: "You confirm that you own the rights to all uploaded content.",
           two: "By uploading, you grant Sikatrim a non-exclusive, royalty-free, worldwide license to display and promote that content.",
@@ -138,7 +134,7 @@ const terms = [
       "Sikatrim provides an inspiration feature known as Trimspiration, which displays selected images and videos from barbers and barbershops to inspire clients.",
     content: [
       {
-        term: "",
+        term: "9",
         subterm: {
           one: "Purpose - Trimspiration allows users to discover haircut ideas and helps barbers and barbershops showcase their creativity and skills.",
           two: "Content Display - By uploading to your gallery or profile, you consent to Sikatrim displaying your work on Trimspiration.",
@@ -156,7 +152,7 @@ const terms = [
     subtext: "Users must not:",
     content: [
       {
-        term: "",
+        term: "10",
         subterm: {
           one: "Post false, misleading, or illegal content.",
           two: "Harass, abuse, or discriminate against others.",
@@ -172,7 +168,7 @@ const terms = [
     subtext: "Sikatrim",
     content: [
       {
-        term: "",
+        term: "11",
         subterm: {
           one: "Does not directly provide barbering services.",
           two: "Is not responsible for injuries, damages, or losses resulting from booked services.",
@@ -188,7 +184,7 @@ const terms = [
     subtext: "We may suspend or terminate accounts that:",
     content: [
       {
-        term: "",
+        term: "12",
         subterm: {
           one: "Violate these Terms.",
           two: "Engage in fraudulent or harmful activity.",
@@ -203,11 +199,8 @@ const terms = [
       "These Terms are governed by the laws of the Republic of Ghana.Disputes will be resolved through mediation before court action, unless urgent legal relief is required.",
     content: [
       {
-        term: "",
-        subterm: {
-          one: "",
-          two: "",
-        },
+        term: "13",
+        subterm: {},
       },
     ],
   },
@@ -218,7 +211,7 @@ const terms = [
       "We may update these Terms at any time. Continued use of the Platform after changes means you accept the updated Terms.",
     content: [
       {
-        term: "",
+        term: "14",
         subterm: {
           one: "",
           two: "",
@@ -232,7 +225,7 @@ const terms = [
     subtext: "For questions, contact us at:",
     content: [
       {
-        term: "",
+        term: "15",
         subterm: {
           one: "support@sikatrim.com",
           two: "Accra, Ghana",
