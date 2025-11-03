@@ -304,7 +304,10 @@ export default function Eula() {
                 <ol>
                   {t.content &&
                     t.content.map((c) => (
-                      <div key={c.term} className="[&_>div:last-child]:mx-4">
+                      <div
+                        key={c.term}
+                        className="[&_p]:text-base [&_>div:last-child]:mx-4"
+                      >
                         {/* <p className="text-xl my-4 list-disc">{c.term}</p> */}
                         <li className="list">
                           <p className="text-xl my-4 font-semibold">{c.term}</p>
@@ -317,40 +320,41 @@ export default function Eula() {
                           )}
                           {c.subterm.two && (
                             <li className="list-disc">
-                              <p className="text-lg">{c.subterm.two}</p>
+                              <p className="text-base">{c.subterm.two}</p>
                             </li>
                           )}
                           {c.subterm.three && (
                             <li className="list-disc">
-                              <p className="text-lg">{c.subterm.three}</p>
+                              <p className="text-base">{c.subterm.three}</p>
                             </li>
                           )}
                           {c.subterm.four && (
                             <li className="list-disc">
-                              <p className="text-lg">{c.subterm.four}</p>
+                              <p className="text-base">{c.subterm.four}</p>
                             </li>
                           )}
                           {c.subterm.five && (
                             <li className="list-disc">
-                              <p className="text-lg">{c.subterm.five}</p>
+                              <p className="text-base">{c.subterm.five}</p>
                             </li>
                           )}
                           {c.subterm.six && (
                             <li className="list-disc">
                               {c.subterm.six && (
-                                <p className="text-lg">{c.subterm.six}</p>
+                                <p className="text-base">{c.subterm.six}</p>
                               )}
                             </li>
                           )}
                           {c.subterm.seven && (
                             <li className="list-disc">
-                              <p className="text-lg">{c.subterm.seven}</p>
+                              <p className="text-base">{c.subterm.seven}</p>
                             </li>
                           )}
                         </div>
                       </div>
                     ))}
                 </ol>
+                {t.foot && <p className="my-4 border-t text-base">{t.foot}</p>}
               </div>
             ))}
         </div>
