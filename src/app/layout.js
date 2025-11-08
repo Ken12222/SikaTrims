@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SikaTrims",
+  title: "Sikatrim",
   description:
-    "This Application for barbers and barbershop owners to manage their business",
+    "Manage your barber business easily with our app—perfect for barbers and barbershop owners to schedule appointments, track clients, and grow their business.",
 };
 
 export default function RootLayout({ children }) {
