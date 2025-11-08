@@ -73,9 +73,9 @@ export default function Navbar() {
               ))}
           </ul>
         </nav>
-        <Button type="submit" className={"bg-black"}>
+        {/* <Button type="submit" className={"bg-black"}>
           Download
-        </Button>
+        </Button> */}
       </div>
       <div>
         <div className="md:hidden w-full mx-auto flex justify-between items-center backdrop-blur-sm bg-white/30 p-6">
@@ -134,7 +134,7 @@ export default function Navbar() {
                   ))}
               </ul>
             </nav>
-            <button className="mt-4">Download</button>
+            {/* <button className="mt-4">Download</button> */}
           </div>
         )}
       </div>

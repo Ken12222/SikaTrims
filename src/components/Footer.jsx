@@ -71,11 +71,13 @@ export default function Footer() {
             <Socials className="flex gap-4 my-4" />
             <div className="my-4 md:flex text-white gap-4">
               <p>© 2025 Copyright. All rights reserved.</p>
-              <Link href={"privacy-policy"} className="mx-4">
-                Privacy Policy
-              </Link>
-              <Link href={"terms-of-use"}>Terms of Service</Link>
-              <Link href={"eula"}>EULA</Link>
+              <div className="flex gap-2 mt-4">
+                <Link href={"privacy-policy"} className="mx-4">
+                  Privacy Policy
+                </Link>
+                <Link href={"terms-of-use"}>Terms of Service</Link>
+                <Link href={"eula"}>EULA</Link>
+              </div>
             </div>
           </div>
         </div>
