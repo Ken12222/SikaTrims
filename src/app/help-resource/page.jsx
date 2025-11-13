@@ -82,7 +82,10 @@ export default function HelpResource() {
             <div key={h.heading} className="bg-[#383838] p-4 h-fit ">
               {openAccordion && openAccordion === h.heading ? (
                 <div className="grid grid-cols-4 gap-4 items-center">
-                  <p className="col-span-3">{h.solution}</p>
+                  <div className="col-span-3">
+                    <p className="border-b my-4 border-gray-600">{h.heading}</p>
+                    <p>{h.solution}</p>
+                  </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

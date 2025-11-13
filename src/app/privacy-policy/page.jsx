@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
       id: 8,
       title: "Children’s Privacy",
       subtext:
-        "Sikatrim is not intended for children under 16. We do not knowingly collect their data.",
+        "Sikatrim is not intended for children under 13. We do not intentionally collect personal information from children under 13.",
       content: [
         {
           term: "8",
@@ -169,64 +169,67 @@ export default function PrivacyPolicy() {
   ];
 
   return (
-    <section className="w-full h-fit pt-38 pb-16 grid md:grid-cols-3 justify-between gap-16 text-[#CEC9BC]">
-      <div className="bg-[#383838] md:inset-0 h-fit px-8 py-4  [&_li]:my-2 [&_li]:hover:text-gray-600 [&_li]:transition-10 ease-in">
-        <nav>
-          <ul>
-            {policies &&
-              policies.map((p) => (
-                <li key={p.title}>
-                  <Link href={"#" + p.title}>{p.title}</Link>
-                </li>
-              ))}
-          </ul>
-        </nav>
-      </div>
-      <div className="[&_p:first-child]:text-xl [&_li]:mx-4 col-span-2 w-4/5 [&_p:last-child]:text-base [&>div]:my-4">
-        {policies &&
-          policies.map((p) => (
-            <div key={p.id} id={`${p.title}`}>
-              <p className="font-bold">{p.title}</p>
-              <p>{p.subtext}</p>
-              <ol>
-                {p.content &&
-                  p.content.map((c) => (
-                    <div key={c.term} className="[&_li]:list-disc">
-                      {c.subterm.one && (
-                        <li key={c.subterm.one}>
-                          <p>{c.subterm.one}</p>
-                        </li>
-                      )}
-                      {c.subterm.two && (
-                        <li key={c.subterm.two}>
-                          <p>{c.subterm.two}</p>
-                        </li>
-                      )}
-                      {c.subterm.three && (
-                        <li key={c.subterm.three}>
-                          <p>{c.subterm.three}</p>
-                        </li>
-                      )}
-                      {c.subterm.four && (
-                        <li key={c.subterm.four}>
-                          <p>{c.subterm.four}</p>
-                        </li>
-                      )}
-                      {c.subterm.five && (
-                        <li key={c.subterm.five}>
-                          <p>{c.subterm.five}</p>
-                        </li>
-                      )}
-                      {c.subterm.six && (
-                        <li key={c.subterm.six}>
-                          <p>{c.subterm.six}</p>
-                        </li>
-                      )}
-                    </div>
-                  ))}
-              </ol>
-            </div>
-          ))}
+    <section className="w-full h-fit pt-34 pb-16 text-[#CEC9BC]">
+      <h1 className="text-3xl my-8 font-bold">Privacy Policy </h1>
+      <div className="w-full h-fit grid md:grid-cols-3 justify-between gap-16 text-[#CEC9BC]">
+        <div className="bg-[#383838] md:inset-0 h-fit px-8 py-4  [&_li]:my-2 [&_li]:hover:text-gray-600 [&_li]:transition-10 ease-in">
+          <nav>
+            <ul>
+              {policies &&
+                policies.map((p) => (
+                  <li key={p.title}>
+                    <Link href={"#" + p.title}>{p.title}</Link>
+                  </li>
+                ))}
+            </ul>
+          </nav>
+        </div>
+        <div className="[&_p:first-child]:text-xl [&_li]:mx-4 col-span-2 w-4/5 [&_p:last-child]:text-base [&>div]:my-4">
+          {policies &&
+            policies.map((p) => (
+              <div key={p.id} id={`${p.title}`}>
+                <p className="font-bold">{p.title}</p>
+                <p>{p.subtext}</p>
+                <ol>
+                  {p.content &&
+                    p.content.map((c) => (
+                      <div key={c.term} className="[&_li]:list-disc">
+                        {c.subterm.one && (
+                          <li key={c.subterm.one}>
+                            <p>{c.subterm.one}</p>
+                          </li>
+                        )}
+                        {c.subterm.two && (
+                          <li key={c.subterm.two}>
+                            <p>{c.subterm.two}</p>
+                          </li>
+                        )}
+                        {c.subterm.three && (
+                          <li key={c.subterm.three}>
+                            <p>{c.subterm.three}</p>
+                          </li>
+                        )}
+                        {c.subterm.four && (
+                          <li key={c.subterm.four}>
+                            <p>{c.subterm.four}</p>
+                          </li>
+                        )}
+                        {c.subterm.five && (
+                          <li key={c.subterm.five}>
+                            <p>{c.subterm.five}</p>
+                          </li>
+                        )}
+                        {c.subterm.six && (
+                          <li key={c.subterm.six}>
+                            <p>{c.subterm.six}</p>
+                          </li>
+                        )}
+                      </div>
+                    ))}
+                </ol>
+              </div>
+            ))}
+        </div>
       </div>
     </section>
   );

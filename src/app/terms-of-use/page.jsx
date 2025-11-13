@@ -18,8 +18,8 @@ const terms = [
   {
     id: 2,
     title: "Definitions",
-    subtext:
-      "Welcome to Sikatrim! These Terms & Conditions (“Terms”) govern your access to and use of the Sikatrim mobile application and related services (the “Platform”).By creating an account or using our Platform, you agree to these Terms. If you disagree, do not use Sikatrim.",
+    subtext: "",
+    // "Welcome to Sikatrim! These Terms & Conditions (“Terms”) govern your access to and use of the Sikatrim mobile application and related services (the “Platform”).By creating an account or using our Platform, you agree to these Terms. If you disagree, do not use Sikatrim.",
     content: [
       {
         term: "2",
@@ -37,7 +37,7 @@ const terms = [
     id: 3,
     title: "Eligibility",
     subtext:
-      "You must be at least 16 years old to create an account and use Sikatrim.",
+      "You must be at least 13 years old to create an account and use Sikatrim.",
     content: [
       {
         term: "3",
